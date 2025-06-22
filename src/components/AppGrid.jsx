@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setAppGridStatus, openWindow, focusWindow } from '../store/store';
 
-const Appgrid = () => {
+const AppGrid = () => {
   const dispatch = useDispatch();
   const { appGridStatus, windows } = useSelector(state => state.windows);
 
@@ -53,4 +53,4 @@ const Appgrid = () => {
   );
 };
 
-export default Appgrid;
+export default AppGrid;
