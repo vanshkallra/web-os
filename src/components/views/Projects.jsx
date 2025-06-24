@@ -2,46 +2,47 @@ import React from 'react';
 import { ExternalLink, Github, Globe } from 'lucide-react';
 
 const Projects = () => {
+  
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-      image: "/api/placeholder/300/200",
-      githubUrl: "https://github.com/username/ecommerce",
-      liveUrl: "https://myecommerce.com",
-      status: "Completed"
+      title: "webOS",
+      description: "Experience my portfolio site along with amazing cool applications in an OS-like environment on the web. Built with React and Redux Toolkit, it features draggable windows, multiple themes, and responsive design.",
+      technologies: ["React 18", "Redux Toolkit", "Vite", "Interact.js", "Lucide React Icons", "Moment.js"],
+      image: "/assets/images/webos.png",
+      githubUrl: "https://github.com/vanshkallra/web-os", // replace with actual URL
+      liveUrl: "https://weboslive.vercel.app", // replace with actual URL
+      status: "Running"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-      image: "/api/placeholder/300/200",
-      githubUrl: "https://github.com/username/taskmanager",
-      liveUrl: "https://mytaskapp.com",
-      status: "Completed"
+      title: "nextContest - Contest Tracker",
+      description: "A Chrome extension to track upcoming and ongoing programming contests from multiple platforms. Get start times, durations, and live indicators, with the ability to pin contests and receive reminders.",
+      technologies: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React", "Vite", "Clist API", "Node.js"],
+      image: "/assets/images/nextcontest.png",
+      githubUrl: "https://github.com/notixdevs/nextContest", // replace with actual URL
+      liveUrl: "https://chromewebstore.google.com/detail/nextcontest-contest-track/iaegknohokdglkofffajgjogikgobban?utm_source=ext_app_menu", // Chrome extension, so no live site
+      status: "Running"
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that provides detailed weather information, forecasts, and interactive maps using multiple weather APIs.",
-      technologies: ["Vue.js", "Weather API", "Chart.js", "Tailwind CSS"],
-      image: "/api/placeholder/300/200",
-      githubUrl: "https://github.com/username/weather-dashboard",
-      liveUrl: "https://myweather.com",
+      title: "Dusk - TNP Cell of NSUT",
+      description: "A placement management system streamlining the recruitment process for students, companies, and placement officers. Includes modules for job posting, applications, analytics, and notifications.",
+      technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      image: "/assets/images/dusk.png",
+      githubUrl: "https://github.com/vanshkallra/Dusk---TnP-Cell-of-NSUT", // replace with actual URL
+      liveUrl: null, // Localhost URL; replace if hosted
       status: "Completed"
     },
     {
       id: 4,
-      title: "AI Chat Bot",
-      description: "An intelligent chatbot using natural language processing to provide customer support and answer frequently asked questions.",
-      technologies: ["Python", "TensorFlow", "Flask", "OpenAI API"],
-      image: "/api/placeholder/300/200",
-      githubUrl: "https://github.com/username/ai-chatbot",
-      liveUrl: null,
-      status: "In Progress"
+      title: "Line Buddy (Freelance)",
+      description: "Line Buddy connects people who need someone to stand in line for them with those willing to help. Book line buddies for government offices, hospitals, events, and more with transparent pricing and flexible scheduling.",
+      technologies: ["React 18", "Node.js", "Express.js", "Axios", "MongoDB", "JWT", "bcrypt"],
+      image: "/assets/images/linebuddy.png",
+      githubUrl: "https://github.com/vanshkallra/linebuddy-frontend", // replace with actual URL
+      liveUrl: "https://linebuddyin.vercel.app", // replace with actual URL
+      status: "Running"
     }
   ];
 
@@ -49,7 +50,7 @@ const Projects = () => {
     switch (status) {
       case 'Completed':
         return 'bg-green-900 text-green-300';
-      case 'In Progress':
+      case 'Running':
         return 'bg-yellow-900 text-yellow-300';
       default:
         return 'bg-gray-700 text-gray-300';

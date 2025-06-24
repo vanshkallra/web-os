@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setAppGridStatus, openWindow } from '../../store/store';
 import { Grid, Clock } from 'lucide-react';
@@ -9,7 +9,7 @@ const Navbar = () => {
   const { appGridStatus, windows } = useSelector(state => state.windows);
   const [currentTime, setCurrentTime] = React.useState(moment().format('HH:mm'));
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(moment().format('HH:mm'));
     }, 1000);

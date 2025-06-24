@@ -101,30 +101,30 @@ const initialState = {
       minHeight: 200,
       zIndex: 1
     },
-    {
-      windowId: "Skills",
-      windowState: "close",
-      displayName: "Skills",
-      windowComponent: 'Window',
-      windowContent: 'Skills',
-      windowContentPadding: {
-        top: null,
-        right: null,
-        bottom: null,
-        left: null
-      },
-      position: "absolute",
-      positionX: 160,
-      positionY: 160,
-      iconImage: "skills.png",
-      altText: "Skills Icon",
-      fullscreen: false,
-      width: 600,
-      height: 400,
-      minWidth: 300,
-      minHeight: 200,
-      zIndex: 1
-    },
+    // {
+    //   windowId: "Skills",
+    //   windowState: "close",
+    //   displayName: "Skills",
+    //   windowComponent: 'Window',
+    //   windowContent: 'Skills',
+    //   windowContentPadding: {
+    //     top: null,
+    //     right: null,
+    //     bottom: null,
+    //     left: null
+    //   },
+    //   position: "absolute",
+    //   positionX: 160,
+    //   positionY: 160,
+    //   iconImage: "skills.png",
+    //   altText: "Skills Icon",
+    //   fullscreen: false,
+    //   width: 600,
+    //   height: 400,
+    //   minWidth: 300,
+    //   minHeight: 200,
+    //   zIndex: 1
+    // },
     {
       windowId: "Projects",
       windowState: "close",

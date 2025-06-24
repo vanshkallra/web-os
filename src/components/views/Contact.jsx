@@ -84,7 +84,7 @@ const Contact = () => {
           <Github className="contact-icon" />
           <div>
             <h4 className="font-semibold">GitHub</h4>
-            <p>github.com/vanshkallra</p>
+            <p><a href="https://github.com/vanshkallra" target='_blank'>github.com/vanshkallra</a></p>
           </div>
         </div>
         
@@ -92,7 +92,7 @@ const Contact = () => {
           <Globe className="contact-icon" />
           <div>
             <h4 className="font-semibold">Website</h4>
-            <p>vanshkalra.vercel.app</p>
+            <p><a href="https://weboslive.vercel.app" target='_blank'>weboslive.vercel.app</a></p>
           </div>
         </div>
         
@@ -104,7 +104,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
+ 
       <div className="contact-form">
         <h3 className="text-2xl font-bold mb-4">Send a Message</h3>
         
